@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solera | Shop</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="bg-light shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-light container py-3">
+      <a class="navbar-brand fw-bold text-danger" href="#">Solera</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-danger" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-danger" href="shop.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link text-danger" href="cart.html">Cart</a></li>
+          <li class="nav-item"><a class="nav-link text-danger" href="checkout.html">Checkout</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+<div class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <input id="productSearch" class="form-control rounded-pill px-4 py-2 shadow" type="text" placeholder="Search for dresses...">
+    </div>
+  </div>
+</div>
+
+<div class="container my-5">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4">
+
+<!-- Product 1 -->
+<div class="col">
+  <div class="card product-card h-100">
+    <img src="dresses/dress1.jpg" class="card-img-top" alt="Floral Summer Dress">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Floral Summer Dress</h5>
+      <p class="card-text">Breathable and stylish for warm days.</p>
+      <p class="fw-bold">$49.99</p>
+      <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#productModal1">Shop Now</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 1 -->
+<div class="modal fade" id="productModal1" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Floral Summer Dress</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body row">
+        <div class="col-md-6">
+          <img src="dresses/dress1.jpg" class="img-fluid" alt="Zoomed Dress">
+        </div>
+        <div class="col-md-6">
+          <p><strong>Price:</strong> $49.99</p>
+          <p><strong>Description:</strong> Breathable and stylish dress with floral patterns. Ideal for summer days.</p>
+          <form>
+            <div class="mb-3">
+              <label for="size1" class="form-label">Size</label>
+              <select id="size1" class="form-select">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="color1" class="form-label">Color</label>
+              <select id="color1" class="form-select">
+                <option>Red</option>
+                <option>Blue</option>
+                <option>Yellow</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="qty1" class="form-label">Quantity</label>
+              <input type="number" id="qty1" class="form-control" value="1" min="1">
+            </div>
+            <button type="submit" class="btn btn-success">Order Now</button>
+            <button class="btn btn-primary add-to-cart-btn" data-id="1" data-name="Floral Summer Dress" data-price="49.99" data-image="dresses/dress1.jpg">
+            Add to Cart </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Product 2 -->
+<div class="col">
+  <div class="card product-card h-100">
+    <img src="dresses/dress2.jpg" class="card-img-top" alt="Floral Summer Dress">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Amelia Floral Midi</h5>
+      <p class="card-text"> Light and breezy midi dress with floral prints.</p>
+      <p class="fw-bold">$49.99</p>
+      <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#productModal2">Shop Now</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="productModal2" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Amelia Floral Midi</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body row">
+        <div class="col-md-6">
+          <img src="dresses/dress2.jpg" class="img-fluid" alt="Zoomed Dress">
+        </div>
+        <div class="col-md-6">
+          <p><strong>Price:</strong> $49.99</p>
+          <p><strong>Description:</strong> Light and breezy midi dress with soft floral prints.</p>
+          <form>
+            <div class="mb-3">
+              <label for="size2" class="form-label">Size</label>
+              <select id="size2" class="form-select">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="color2" class="form-label">Color</label>
+              <select id="color2" class="form-select">
+                <option>Red</option>
+                <option>Blue</option>
+                <option>Yellow</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="qty2" class="form-label">Quantity</label>
+              <input type="number" id="qty2" class="form-control" value="1" min="1">
+            </div>
+            <button type="submit" class="btn btn-success">Order Now</button>
+            <button class="btn btn-primary add-to-cart-btn" data-id="2" data-name="Amelia Floral Midi" data-price="49.99" data-image="dresses/dress2.jpg">
+            Add to Cart </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Product 3 -->
+<div class="col">
+  <div class="card product-card h-100">
+    <img src="dresses/dress3.jpg" class="card-img-top" alt="Floral Summer Dress">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Celeste Dress</h5>
+      <p class="card-text"> Romantic silhouette with pink flowers.</p>
+      <p class="fw-bold">$49.99</p>
+      <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#productModal3">Shop Now</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal fade" id="productModal3" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Celeste Dress</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body row">
+        <div class="col-md-6">
+          <img src="dresses/dress3.jpg" class="img-fluid" alt="Zoomed Dress">
+        </div>
+        <div class="col-md-6">
+          <p><strong>Price:</strong> $49.99</p>
+          <p><strong>Description:</strong> Romantic silhouette with ruffled sleeves and a cinched waistline.</p>
+          <form>
+            <div class="mb-3">
+              <label for="size3" class="form-label">Size</label>
+              <select id="size3" class="form-select">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="color3" class="form-label">Color</label>
+              <select id="color3" class="form-select">
+                <option>Red</option>
+                <option>Blue</option>
+                <option>Yellow</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="qty2" class="form-label">Quantity</label>
+              <input type="number" id="qty2" class="form-control" value="1" min="1">
+            </div>
+            <button type="submit" class="btn btn-success">Order Now</button>
+            <button class="btn btn-primary add-to-cart-btn" data-id="3" data-name="Celeste Dress" data-price="49.99" data-image="dresses/dress3.jpg">
+            Add to Cart </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Product 4 -->
+<div class="col">
+  <div class="card product-card h-100">
+    <img src="dresses/dress4.jpg" class="card-img-top" alt="Floral Summer Dress">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Ivy Lace Dress</h5>
+      <p class="card-text"> Delicate lace mini dress with scalloped edges.</p>
+      <p class="fw-bold">$49.99</p>
+      <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#productModal4">Shop Now</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 4 -->
+<div class="modal fade" id="productModal4" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Ivy Lace Dress</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body row">
+        <div class="col-md-6">
+          <img src="dresses/dress4.jpg" class="img-fluid" alt="Zoomed Dress">
+        </div>
+        <div class="col-md-6">
+          <p><strong>Price:</strong> $49.99</p>
+          <p><strong>Description:</strong> Delicate lace mini dress with scalloped edges.</p>
+          <form>
+            <div class="mb-3">
+              <label for="size4" class="form-label">Size</label>
+              <select id="size4" class="form-select">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="color4" class="form-label">Color</label>
+              <select id="color4" class="form-select">
+                <option>Red</option>
+                <option>Blue</option>
+                <option>Yellow</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="qty2" class="form-label">Quantity</label>
+              <input type="number" id="qty2" class="form-control" value="1" min="1">
+            </div>
+            <button type="submit" class="btn btn-success">Order Now</button>
+            <button class="btn btn-primary add-to-cart-btn" data-id="4" data-name="Ivy Lace Dress" data-price="49.99" data-image="dresses/dress4.jpg">
+            Add to Cart </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Product 5 -->
+<div class="col">
+  <div class="card product-card h-100">
+    <img src="dresses/dress5.jpg" class="card-img-top" alt="Floral Summer Dress">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Harper Shirt Dress</h5>
+      <p class="card-text"> Dress with a waist tie and pockets for everyday chic.</p>
+      <p class="fw-bold">$49.99</p>
+      <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#productModal5">Shop Now</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 5 -->
+<div class="modal fade" id="productModal5" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Harper Shirt Dress</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body row">
+        <div class="col-md-6">
+          <img src="dresses/dress5.jpg" class="img-fluid" alt="Zoomed Dress">
+        </div>
+        <div class="col-md-6">
+          <p><strong>Price:</strong> $49.99</p>
+          <p><strong>Description:</strong> Casual yet polished button-down dress with a waist tie and pockets for everyday chic.</p>
+          <form>
+            <div class="mb-3">
+              <label for="size5" class="form-label">Size</label>
+              <select id="size5" class="form-select">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="color5" class="form-label">Color</label>
+              <select id="color5" class="form-select">
+                <option>Red</option>
+                <option>Blue</option>
+                <option>Yellow</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="qty2" class="form-label">Quantity</label>
+              <input type="number" id="qty2" class="form-control" value="1" min="1">
+            </div>
+            <button type="submit" class="btn btn-success">Order Now</button>
+            <button class="btn btn-primary add-to-cart-btn" data-id="5" data-name="Harper Shirt Dress" data-price="49.99" data-image="dresses/dress5.jpg">
+            Add to Cart </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Product 6 -->
+<div class="col">
+  <div class="card product-card h-100">
+    <img src="dresses/dress6.jpg" class="card-img-top" alt="Floral Summer Dress">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Nova Cocktail Dress</h5>
+      <p class="card-text"> Eye-catching sequin dress.</p>
+      <p class="fw-bold">$49.99</p>
+      <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#productModal6">Shop Now</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 6 -->
+<div class="modal fade" id="productModal6" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Nova Cocktail Dress</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body row">
+        <div class="col-md-6">
+          <img src="dresses/dress6.jpg" class="img-fluid" alt="Zoomed Dress">
+        </div>
+        <div class="col-md-6">
+          <p><strong>Price:</strong> $49.99</p>
+          <p><strong>Description:</strong> Eye-catching sequin dress made to shine at parties and special events.</p>
+          <form>
+            <div class="mb-3">
+              <label for="size6" class="form-label">Size</label>
+              <select id="size6" class="form-select">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="color6" class="form-label">Color</label>
+              <select id="color6" class="form-select">
+                <option>Red</option>
+                <option>Blue</option>
+                <option>Yellow</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="qty2" class="form-label">Quantity</label>
+              <input type="number" id="qty2" class="form-control" value="1" min="1">
+            </div>
+            <button type="submit" class="btn btn-success">Order Now</button>
+            <button class="btn btn-primary add-to-cart-btn" data-id="6" data-name="Nova Cocktail Dress" data-price="49.99" data-image="dresses/dress6.jpg">
+            Add to Cart </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Product 7 -->
+<div class="col">
+  <div class="card product-card h-100">
+    <img src="dresses/dress7.jpg" class="card-img-top" alt="Floral Summer Dress">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Mila Boho Maxi</h5>
+      <p class="card-text"> A relaxed bohemian-style maxi dress.</p>
+      <p class="fw-bold">$49.99</p>
+      <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#productModal7">Shop Now</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 7 -->
+<div class="modal fade" id="productModal7" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Mila Boho Maxi</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body row">
+        <div class="col-md-6">
+          <img src="dresses/dress7.jpg" class="img-fluid" alt="Zoomed Dress">
+        </div>
+        <div class="col-md-6">
+          <p><strong>Price:</strong> $49.99</p>
+          <p><strong>Description:</strong> A relaxed bohemian-style maxi dress with tassel ties, flowy sleeves, and tiered skirt.</p>
+          <form>
+            <div class="mb-3">
+              <label for="size7" class="form-label">Size</label>
+              <select id="size7" class="form-select">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="color7" class="form-label">Color</label>
+              <select id="color7" class="form-select">
+                <option>Red</option>
+                <option>Blue</option>
+                <option>Yellow</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="qty2" class="form-label">Quantity</label>
+              <input type="number" id="qty2" class="form-control" value="1" min="1">
+            </div>
+            <button type="submit" class="btn btn-success">Order Now</button>
+            <button class="btn btn-primary add-to-cart-btn" data-id="7" data-name="Mila Boho Maxi" data-price="49.99" data-image="dresses/dress7.jpg">
+            Add to Cart </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Product 8 -->
+<div class="col">
+  <div class="card product-card h-100">
+    <img src="dresses/dress8.jpg" class="card-img-top" alt="Floral Summer Dress">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Aria Bodycon Dress</h5>
+      <p class="card-text"> A sleek, figure-hugging dress.</p>
+      <p class="fw-bold">$49.99</p>
+      <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#productModal8">Shop Now</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 8 -->
+<div class="modal fade" id="productModal8" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Aria Bodycon Dress</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body row">
+        <div class="col-md-6">
+          <img src="dresses/dress8.jpg" class="img-fluid" alt="Zoomed Dress">
+        </div>
+        <div class="col-md-6">
+          <p><strong>Price:</strong> $49.99</p>
+          <p><strong>Description:</strong> A sleek, figure-hugging dress with ruched details and a flattering neckline.</p>
+          <form>
+            <div class="mb-3">
+              <label for="size8" class="form-label">Size</label>
+              <select id="size8" class="form-select">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="color8" class="form-label">Color</label>
+              <select id="color8" class="form-select">
+                <option>Red</option>
+                <option>Blue</option>
+                <option>Yellow</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="qty2" class="form-label">Quantity</label>
+              <input type="number" id="qty2" class="form-control" value="1" min="1">
+            </div>
+            <button type="submit" class="btn btn-success">Order Now</button>
+            <button class="btn btn-primary add-to-cart-btn" data-id="8" data-name="Aria Bodycon Dress" data-price="49.99" data-image="dresses/dress8.jpg">
+            Add to Cart </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Product 9 -->
+<div class="col">
+  <div class="card product-card h-100">
+    <img src="dresses/dress9.jpg" class="card-img-top" alt="Floral Summer Dress">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Daisy Ruffle Dress</h5>
+      <p class="card-text"> Cute wrap design with cascading ruffles</p>
+      <p class="fw-bold">$49.99</p>
+      <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#productModal9">Shop Now</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 9 -->
+<div class="modal fade" id="productModal9" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Daisy Ruffle Dress</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body row">
+        <div class="col-md-6">
+          <img src="dresses/dress9.jpg" class="img-fluid" alt="Zoomed Dress">
+        </div>
+        <div class="col-md-6">
+          <p><strong>Price:</strong> $49.99</p>
+          <p><strong>Description:</strong> Cute wrap design with cascading ruffles and a tie-waist—playful and comfortable.</p>
+          <form>
+            <div class="mb-3">
+              <label for="size9" class="form-label">Size</label>
+              <select id="size9" class="form-select">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="color9" class="form-label">Color</label>
+              <select id="color9" class="form-select">
+                <option>Red</option>
+                <option>Blue</option>
+                <option>Yellow</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="qty2" class="form-label">Quantity</label>
+              <input type="number" id="qty2" class="form-control" value="1" min="1">
+            </div>
+            <button type="submit" class="btn btn-success">Order Now</button>
+            <button class="btn btn-primary add-to-cart-btn" data-id="9" data-name="Daisy Ruffle Dress" data-price="49.99" data-image="dresses/dress9.jpg">
+            Add to Cart </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Product 10 -->
+<div class="col">
+  <div class="card product-card h-100">
+    <img src="dresses/dress10.jpg" class="card-img-top" alt="Floral Summer Dress">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Jasmine Midi Dress</h5>
+      <p class="card-text">Graceful pleats, modest neckline.</p>
+      <p class="fw-bold">$49.99</p>
+      <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#productModal10">Shop Now</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 10 -->
+<div class="modal fade" id="productModal10" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Jasmine Midi Dress</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body row">
+        <div class="col-md-6">
+          <img src="dresses/dress10.jpg" class="img-fluid" alt="Zoomed Dress">
+        </div>
+        <div class="col-md-6">
+          <p><strong>Price:</strong> $49.99</p>
+          <p><strong>Description:</strong> Graceful pleats, modest neckline, and an elegant fit—great for weddings or dinners.</p>
+          <form>
+            <div class="mb-3">
+              <label for="size10" class="form-label">Size</label>
+              <select id="size10" class="form-select">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="color10" class="form-label">Color</label>
+              <select id="color10" class="form-select">
+                <option>Red</option>
+                <option>Blue</option>
+                <option>Yellow</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="qty2" class="form-label">Quantity</label>
+              <input type="number" id="qty2" class="form-control" value="1" min="1">
+            </div>
+            <button type="submit" class="btn btn-success">Order Now</button>
+            <button class="btn btn-primary add-to-cart-btn" data-id="10" data-name="Jasmine Midi Dress" data-price="49.99" data-image="dresses/dress10.jpg">
+            Add to Cart </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Product 11 -->
+<div class="col">
+  <div class="card product-card h-100">
+    <img src="dresses/dress11.jpg" class="card-img-top" alt="Floral Summer Dress">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Zara Denim Dress</h5>
+      <p class="card-text">Casual sleeveless denim dress.</p>
+      <p class="fw-bold">$49.99</p>
+      <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#productModal11">Shop Now</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal11 -->
+<div class="modal fade" id="productModal11" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Zara Denim Dress</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body row">
+        <div class="col-md-6">
+          <img src="dresses/dress11.jpg" class="img-fluid" alt="Zoomed Dress">
+        </div>
+        <div class="col-md-6">
+          <p><strong>Price:</strong> $49.99</p>
+          <p><strong>Description:</strong> Casual sleeveless denim dress with front buttons and a relaxed shape.</p>
+          <form>
+            <div class="mb-3">
+              <label for="size11" class="form-label">Size</label>
+              <select id="size11" class="form-select">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="color11" class="form-label">Color</label>
+              <select id="color11" class="form-select">
+                <option>Red</option>
+                <option>Blue</option>
+                <option>Yellow</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="qty2" class="form-label">Quantity</label>
+              <input type="number" id="qty2" class="form-control" value="1" min="1">
+            </div>
+            <button type="submit" class="btn btn-success">Order Now</button>
+            <button class="btn btn-primary add-to-cart-btn" data-id="11" data-name="Zara Denim Dress" data-price="49.99" data-image="dresses/dress11.jpg">
+            Add to Cart </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Product 12 -->
+<div class="col">
+  <div class="card product-card h-100">
+    <img src="dresses/dress12.jpg" class="card-img-top" alt="Floral Summer Dress">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Elena Layered Dress</h5>
+      <p class="card-text">Whimsical tulle layers.</p>
+      <p class="fw-bold">$49.99</p>
+      <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#productModal12">Shop Now</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 12 -->
+<div class="modal fade" id="productModal12" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Elena Layered Dress</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body row">
+        <div class="col-md-6">
+          <img src="dresses/dress12.jpg" class="img-fluid" alt="Zoomed Dress">
+        </div>
+        <div class="col-md-6">
+          <p><strong>Price:</strong> $49.99</p>
+          <p><strong>Description:</strong> Whimsical tulle layers give this dress a dreamy, fairytale-inspired feel.</p>
+          <form>
+            <div class="mb-3">
+              <label for="size12" class="form-label">Size</label>
+              <select id="size12" class="form-select">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="color12" class="form-label">Color</label>
+              <select id="color12" class="form-select">
+                <option>Red</option>
+                <option>Blue</option>
+                <option>Yellow</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="qty2" class="form-label">Quantity</label>
+              <input type="number" id="qty2" class="form-control" value="1" min="1">
+            </div>
+            <button type="submit" class="btn btn-success">Order Now</button>
+            <button class="btn btn-primary add-to-cart-btn" data-id="12" data-name="Elena Layered Dress" data-price="49.99" data-image="dresses/dress12.jpg">
+            Add to Cart </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Product 13 -->
+<div class="col">
+  <div class="card product-card h-100">
+    <img src="dresses/dress13.jpg" class="card-img-top" alt="Floral Summer Dress">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Tessa Cut-Out Dress</h5>
+      <p class="card-text">Modern cut-out details at the waist.</p>
+      <p class="fw-bold">$49.99</p>
+      <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#productModal13">Shop Now</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 13 -->
+<div class="modal fade" id="productModal13" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Tessa Cut-Out Dress</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body row">
+        <div class="col-md-6">
+          <img src="dresses/dress13.jpg" class="img-fluid" alt="Zoomed Dress">
+        </div>
+        <div class="col-md-6">
+          <p><strong>Price:</strong> $49.99</p>
+          <p><strong>Description:</strong> Modern cut-out details at the waist with a sleek, minimalist design. </p>
+          <form>
+            <div class="mb-3">
+              <label for="size13" class="form-label">Size</label>
+              <select id="size13" class="form-select">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="color13" class="form-label">Color</label>
+              <select id="color13" class="form-select">
+                <option>Red</option>
+                <option>Blue</option>
+                <option>Yellow</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="qty2" class="form-label">Quantity</label>
+              <input type="number" id="qty2" class="form-control" value="1" min="1">
+            </div>
+            <button type="submit" class="btn btn-success">Order Now</button>
+            <button class="btn btn-primary add-to-cart-btn" data-id="13" data-name="Tessa Cut-Out Dress" data-price="49.99" data-image="dresses/dress13.jpg">
+            Add to Cart </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Product 14 -->
+<div class="col">
+  <div class="card product-card h-100">
+    <img src="dresses/dress14.jpg" class="card-img-top" alt="Floral Summer Dress">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Layla Maxi Dress</h5>
+      <p class="card-text">Flowing halter-neck maxi dress</p>
+      <p class="fw-bold">$49.99</p>
+      <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#productModal14">Shop Now</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 14 -->
+<div class="modal fade" id="productModal14" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Layla Maxi Dress</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body row">
+        <div class="col-md-6">
+          <img src="dresses/dress14.jpg" class="img-fluid" alt="Zoomed Dress">
+        </div>
+        <div class="col-md-6">
+          <p><strong>Price:</strong> $49.99</p>
+          <p><strong>Description:</strong> Flowing halter-neck maxi dress in bold colors, perfect for summer events.</p>
+          <form>
+            <div class="mb-3">
+              <label for="size14" class="form-label">Size</label>
+              <select id="size14" class="form-select">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="color14" class="form-label">Color</label>
+              <select id="color14" class="form-select">
+                <option>Red</option>
+                <option>Blue</option>
+                <option>Yellow</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="qty2" class="form-label">Quantity</label>
+              <input type="number" id="qty2" class="form-control" value="1" min="1">
+            </div>
+            <button type="submit" class="btn btn-success">Order Now</button>
+            <button class="btn btn-primary add-to-cart-btn" data-id="14" data-name="Layla Maxi Dress" data-price="49.99" data-image="dresses/dress14.jpg">
+            Add to Cart </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Product 15 -->
+<div class="col">
+  <div class="card product-card h-100">
+    <img src="dresses/dress15.jpg" class="card-img-top" alt="Floral Summer Dress">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Bianca Slip Dress</h5>
+      <p class="card-text">Timeless satin slip dress.</p>
+      <p class="fw-bold">$49.99</p>
+      <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#productModal15">Shop Now</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 15 -->
+<div class="modal fade" id="productModal15" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Bianca Slip Dress</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body row">
+        <div class="col-md-6">
+          <img src="dresses/dress15.jpg" class="img-fluid" alt="Zoomed Dress">
+        </div>
+        <div class="col-md-6">
+          <p><strong>Price:</strong> $49.99</p>
+          <p><strong>Description:</strong> Timeless satin slip dress that’s easy to style up or down.</p>
+          <form>
+            <div class="mb-3">
+              <label for="size15" class="form-label">Size</label>
+              <select id="size15" class="form-select">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="color15" class="form-label">Color</label>
+              <select id="color15" class="form-select">
+                <option>Red</option>
+                <option>Blue</option>
+                <option>Yellow</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="qty2" class="form-label">Quantity</label>
+              <input type="number" id="qty2" class="form-control" value="1" min="1">
+            </div>
+            <button type="submit" class="btn btn-success">Order Now</button>
+            <button class="btn btn-primary add-to-cart-btn" data-id="15" data-name="Bianca Slip Dress" data-price="49.99" data-image="dresses/dress15.jpg">
+            Add to Cart </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Product 16 -->
+<div class="col">
+  <div class="card product-card h-100">
+    <img src="dresses/dress16.jpg" class="card-img-top" alt="Floral Summer Dress">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Nora Dress</h5>
+      <p class="card-text">Elegant embroidery on a soft chiffon.</p>
+      <p class="fw-bold">$49.99</p>
+      <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#productModal16">Shop Now</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 16 -->
+<div class="modal fade" id="productModal16" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Nora Dress</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body row">
+        <div class="col-md-6">
+          <img src="dresses/dress16.jpg" class="img-fluid" alt="Zoomed Dress">
+        </div>
+        <div class="col-md-6">
+          <p><strong>Price:</strong> $49.99</p>
+          <p><strong>Description:</strong> Elegant embroidery on a soft chiffon base—perfect for formal events.</p>
+          <form>
+            <div class="mb-3">
+              <label for="size16" class="form-label">Size</label>
+              <select id="size16" class="form-select">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="color16" class="form-label">Color</label>
+              <select id="color16" class="form-select">
+                <option>Red</option>
+                <option>Blue</option>
+                <option>Yellow</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="qty2" class="form-label">Quantity</label>
+              <input type="number" id="qty2" class="form-control" value="1" min="1">
+            </div>
+            <button type="submit" class="btn btn-success">Order Now</button>
+            <button class="btn btn-primary add-to-cart-btn" data-id="16" data-name="Nora Dress" data-price="49.99" data-image="dress/dress16.jpg">
+            Add to Cart </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Product 17 -->
+<div class="col">
+  <div class="card product-card h-100">
+    <img src="dresses/dress17.jpg" class="card-img-top" alt="Floral Summer Dress">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Fiona Sun Dress</h5>
+      <p class="card-text">Lightweight and colorful with a tiered skirt.</p>
+      <p class="fw-bold">$49.99</p>
+      <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#productModal17">Shop Now</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 17 -->
+<div class="modal fade" id="productModal17" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Fiona Sun Dress</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body row">
+        <div class="col-md-6">
+          <img src="dresses/dress17.jpg" class="img-fluid" alt="Zoomed Dress">
+        </div>
+        <div class="col-md-6">
+          <p><strong>Price:</strong> $49.99</p>
+          <p><strong>Description:</strong> Lightweight and colorful with a tiered skirt—perfect for sunny vacations.</p>
+          <form>
+            <div class="mb-3">
+              <label for="size17" class="form-label">Size</label>
+              <select id="size17" class="form-select">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="color17" class="form-label">Color</label>
+              <select id="color17" class="form-select">
+                <option>Red</option>
+                <option>Blue</option>
+                <option>Yellow</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="qty2" class="form-label">Quantity</label>
+              <input type="number" id="qty2" class="form-control" value="1" min="1">
+            </div>
+            <button type="submit" class="btn btn-success">Order Now</button>
+            <button class="btn btn-primary add-to-cart-btn" data-id="17" data-name="Fiona Sun Dress" data-price="49.99" data-image="dresses/dress17.jpg">
+            Add to Cart </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Product 18 -->
+<div class="col">
+  <div class="card product-card h-100">
+    <img src="dresses/dress18.jpg" class="card-img-top" alt="Floral Summer Dress">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Sienna Dress</h5>
+      <p class="card-text">A statement Off-shoulder.</p>
+      <p class="fw-bold">$49.99</p>
+      <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#productModal18">Shop Now</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 18 -->
+<div class="modal fade" id="productModal18" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Sienna Dress</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body row">
+        <div class="col-md-6">
+          <img src="dresses/dress18.jpg" class="img-fluid" alt="Zoomed Dress">
+        </div>
+        <div class="col-md-6">
+          <p><strong>Price:</strong> $49.99</p>
+          <p><strong>Description:</strong> A statement off-shoulder look with an asymmetrical hem and a touch of glam.</p>
+          <form>
+            <div class="mb-3">
+              <label for="size18" class="form-label">Size</label>
+              <select id="size18" class="form-select">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="color18" class="form-label">Color</label>
+              <select id="color18" class="form-select">
+                <option>Red</option>
+                <option>Blue</option>
+                <option>Yellow</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="qty2" class="form-label">Quantity</label>
+              <input type="number" id="qty2" class="form-control" value="1" min="1">
+            </div>
+            <button type="submit" class="btn btn-success">Order Now</button>
+            <button class="btn btn-primary add-to-cart-btn" data-id="18" data-name="Sienna Dress" data-price="49.99" data-image="dresses/dress19.jpg">
+            Add to Cart </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Product 19 -->
+<div class="col">
+  <div class="card product-card h-100">
+    <img src="dresses/dress19.jpg" class="card-img-top" alt="Floral Summer Dress">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Kaia Puff Mini</h5>
+      <p class="card-text">Trendy mini dress with dramatic puff sleeves.</p>
+      <p class="fw-bold">$49.99</p>
+      <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#productModal19">Shop Now</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 19 -->
+<div class="modal fade" id="productModal19" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Kaia Puff Mini</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body row">
+        <div class="col-md-6">
+          <img src="dresses/dress19.jpg" class="img-fluid" alt="Zoomed Dress">
+        </div>
+        <div class="col-md-6">
+          <p><strong>Price:</strong> $49.99</p>
+          <p><strong>Description:</strong> Trendy mini dress with dramatic puff sleeves and a square neckline—bold and fashion-forward.</p>
+          <form>
+            <div class="mb-3">
+              <label for="size19" class="form-label">Size</label>
+              <select id="size19" class="form-select">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="color19" class="form-label">Color</label>
+              <select id="color19" class="form-select">
+                <option>Red</option>
+                <option>Blue</option>
+                <option>Yellow</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="qty2" class="form-label">Quantity</label>
+              <input type="number" id="qty2" class="form-control" value="1" min="1">
+            </div>
+            <button type="submit" class="btn btn-success">Order Now</button>
+            <button class="btn btn-primary add-to-cart-btn" data-id="19" data-name="Kaia Puff Mini" data-price="49.99" data-image="dresses/dress19.jpg">
+            Add to Cart </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Product 20 -->
+<div class="col">
+  <div class="card product-card h-100">
+    <img src="dresses/dress20.jpg" class="card-img-top" alt="Floral Summer Dress">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Esme Velvet Dress</h5>
+      <p class="card-text">Luxurious velvet wrap dress with long sleeves.</p>
+      <p class="fw-bold">$49.99</p>
+      <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#productModal20">Shop Now</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 20 -->
+<div class="modal fade" id="productModal20" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Esme Velvet Dress</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body row">
+        <div class="col-md-6">
+          <img src="dresses/dress20.jpg" class="img-fluid" alt="Zoomed Dress">
+        </div>
+        <div class="col-md-6">
+          <p><strong>Price:</strong> $49.99</p>
+          <p><strong>Description:</strong> Luxurious velvet wrap dress with long sleeves and a tie waist—perfect for date nights or holiday parties.</p>
+          <form>
+            <div class="mb-3">
+              <label for="size20" class="form-label">Size</label>
+              <select id="size20" class="form-select">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="color20" class="form-label">Color</label>
+              <select id="color20" class="form-select">
+                <option>Red</option>
+                <option>Blue</option>
+                <option>Yellow</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="qty2" class="form-label">Quantity</label>
+              <input type="number" id="qty2" class="form-control" value="1" min="1">
+            </div>
+            <button type="submit" class="btn btn-success">Order Now</button>
+            <button class="btn btn-primary add-to-cart-btn" data-id="20" data-name="Esme Velvet Dress" data-price="49.99" data-image="dresses/dress20.jpg">
+            Add to Cart </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+
+
+  <footer class="bg-danger text-white text-center py-3">
+    <p class="mb-0">&copy; 2025 Solera. All rights reserved.</p>
+  </footer>
+
+  <script>
+  // Get all add-to-cart buttons
+  const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
+
+  addToCartButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const id = button.getAttribute('data-id');
+      const name = button.getAttribute('data-name');
+      const price = parseFloat(button.getAttribute('data-price'));
+      const image = button.getAttribute('data-image');
+
+      // Get existing cart from localStorage or create new array
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+      // Check if product is already in cart
+      const existingProductIndex = cart.findIndex(item => item.id === id);
+
+      if (existingProductIndex !== -1) {
+        // If exists, increase quantity
+        cart[existingProductIndex].quantity += 1;
+      } else {
+        // Else add new product with quantity 1
+        cart.push({ id, name, price, image, quantity: 1 });
+      }
+
+      // Save cart back to localStorage
+      localStorage.setItem('cart', JSON.stringify(cart));
+
+      alert(`${name} added to cart!`);
+    });
+  });
+</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

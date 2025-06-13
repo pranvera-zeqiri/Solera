@@ -1,0 +1,91 @@
+/* styles.css */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #ffe4e9, #ffc1d3);
+  color: #333;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nav-link {
+  font-weight: 500;
+}
+
+.card-title {
+  font-weight: 600;
+}
+  
+.hero-section {
+  background: url('solera/background1.jpg') no-repeat center/cover;
+  color: white;
+}
+
+.hero-overlay {
+  background-color: rgba(255, 105, 180, 0.6);
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.small-carousel-img {
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+  }
+
+.text-pink {
+    color: #e91e63;
+  }
+  
+#about {
+    background: linear-gradient(to top right, #fff0f5, #ffe0ec);
+  }
+  
+#about .badge {
+    font-size: 0.85rem;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+  }
+
+  
+.chat-header {
+    border-bottom: 1px solid #ffcad4;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+  
+.chat-body {
+    max-height: 200px;
+    overflow-y: auto;
+    font-size: 0.9rem;
+  }
+
+/* shop page */ 
+
+body {
+  background: #f5f7fa; /* Light, clean background similar to a homepage */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-control:focus {
+    box-shadow: none;
+  }
+
+.product-card img {
+  object-fit: cover;
+  height: 300px;
+}
+
+
+
+
+
+
+
